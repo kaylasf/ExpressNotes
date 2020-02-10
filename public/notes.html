@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>expressNotes</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light justify-content-center">
+        <a class="navbar-brand " href="/notes">expressNotes <i class="large material-icons">note</i></a>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="jumbotron">
+            <form>
+                <div class="form-group">
+                    <label for="title" c>Note Title</label>
+                    <input type="title" class="form-control note-title newNote" placeholder="">
+                </div>
+                <div class="mb-3">
+                    <label for="validationTextarea">Textarea</label>
+                    <textarea class="form-control note-textarea newNote" id="validationTextarea" placeholder="" required></textarea>
+                </div>
+                <div class="row">
+
+                    <button type="button " class="btn btn-dark btn-block new-note" id="submit" >Submit New
+                        Note</button>
+
+                </div>
+            </form>
+        </div>
+
+        <div class="jumbotron" >
+            <span id="Cards" style="overflow: scroll;"></span>
+            <!-- <div class="card w-100" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Note Created</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <div class="row justify-content-end">
+                        <a href="#" class="card-link mr-5"><i class="large material-icons">delete_forever</i></a>
+                        <a href="#" class="card-link mr-5"><i class="large material-icons">create</i></a>
+                    </div>
+                </div>
+            </div> -->
+
+        </div>
+    </div>
+
+  
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="./assets/app.js"></script>
+
+
+</body>
+
+</html>

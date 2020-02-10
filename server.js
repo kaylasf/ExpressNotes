@@ -1,13 +1,20 @@
-const express = require('express')
-const app = express()
+var express = require("express")
+var app = express()
 
-const PORT = process.env.PORT || 8080;
+var PORT = process.env.PORT || 8080;
 
-app.use(express.urlencooded({ extended: true }))
+app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
+app.use(express.static('public'))
 
+//  var notesData = require('./data/notes.js')
+// app.get("/api/notes", function(req, res) {
+//     console.log("inside api routes")
+//   res.json(notesData);
+// });
 require('./routes/apiRoutes')(app)
-require('./routes/apiRoutes')(app)
+require('./routes/htmlRoutes')(app)
+
 
 app.listen(PORT, function(){
     console.log(`App listening on PORT: ${PORT}`)
