@@ -80,30 +80,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
             deleteNote(e.target.parentElement.parentElement.id)
 
         }
-    //     if (e.target.className == "large material-icons updateBtn") {
-    //         var cardDisp = document.querySelector('.cardDisplay')
-    //         cardDisp.setAttribute("style", "display: none")
-    //         var newDiv = document.createElement('DIV')
-    //         var updNote = ` 
-    //         <form>
-    //       <div class="form-group">
-    //           <label for="title" c>Note Title</label>
-    //           <input type="title" class="form-control note-title newNote" placeholder="">
-    //       </div>
-    //       <div class="mb-3">
-    //           <label for="validationTextarea">Textarea</label>
-    //           <textarea class="form-control note-textarea newNote" id="validationTextarea" placeholder="" required></textarea>
-    //       </div>
-    //       <div class="row">
-
-    //           <button type="button " class="btn btn-dark btn-block new-note" id="updNote" >Submit New
-    //               Note</button>
-
-    //       </div>
-    //   </form>`
-    //   $(newDiv).append(e.target.className('formDisplay'))
-    //         //    updateNote(e.target.parentElement.parentElement.id)
-    //     }
+ 
 
 
     })
